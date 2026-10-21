@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kron — your days, read back to you</title>
+<meta name="description" content="Kron is a private daily log for Android. Write a line as your day goes. Close the day, and Lumen tells you what shaped it. No account, no ads — your entries stay on your phone.">
+<meta property="og:title" content="Kron — your days, read back to you">
+<meta property="og:description" content="A private daily log for Android. Write a line as your day goes; Lumen reads your days back to you and shows your patterns.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script>(function(){try{if(localStorage.getItem('kron-theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+<script src="config.js"></script>
+</head>
+<body id="top">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="wordmark" href="#top">Kron</a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="privacy/">Privacy</a>
+        <a href="key/">Get a key</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">A private daily log for Android</p>
+      <h1>Your days,<br><em>read back to you.</em></h1>
+      <p class="lede">Write a line as your day goes. Close the day, and Lumen — Kron's built-in intelligence — tells you what shaped it, and why. After a few days, you see what lifts your weeks and what drags them.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#how">See how it works</a>
+        <a class="btn btn-secondary" href="key/">Get an AI key</a>
+      </div>
+      <div class="hero-trust">
+        <span>No account</span>
+        <span>No ads</span>
+        <span>Your entries stay on your phone</span>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <div class="phone"><img src="img/01-today.png" alt="Kron's Today screen — a day logged one line at a time, with the day's score at the top"></div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2>One line a day. <em>Kron does the rest.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step-num">1</span>
+        <h3>Write a line</h3>
+        <p>Log your day as it goes, one line at a time. Kron tags each entry for you, so there's nothing to file or sort.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">2</span>
+        <h3>Close the day</h3>
+        <p>Lumen reads it back: one line on what shaped it, then why — in your own words. Never a bare recap of events.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">3</span>
+        <h3>Watch the patterns</h3>
+        <p>Over days and weeks the patterns surface on their own — what lifts you, what drains you, what you'd never have spotted alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="feature">
+  <div class="container feature-inner">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">Close the day</p>
+      <h2>Know why today <em>went well.</em></h2>
+      <p>Close the day and Lumen reads it back: one line on what shaped it, then why — in your own words. Not a recap of events. The thing that mattered, with the entries that back it up.</p>
+    </div>
+    <div class="feature-media reveal">
+      <div class="phone"><img src="img/03-day.png" alt="Kron's closed-day view — a takeaway and the reasons behind it"></div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container feature-inner reverse">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">Patterns</p>
+      <h2>Spot the patterns <em>you'd miss.</em></h2>
+      <p>Over days and weeks, Kron surfaces what keeps showing up: what lifts you, what drains you, what you keep coming back to.</p>
+    </div>
+    <div class="feature-media reveal">
+      <div class="phone"><img src="img/04-insights.png" alt="Kron's insights — patterns, rhythm and score drivers from closed days"></div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container feature-inner">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">Proof</p>
+      <h2>Proof, <em>not a hunch.</em></h2>
+      <p>See your average day with a morning walk, and without one. Kron counts from your own days, so every claim points back to an entry you wrote.</p>
+    </div>
+    <div class="feature-media reveal">
+      <div class="phone"><img src="img/02-tag.png" alt="Kron's tag page — the average score with and without a habit, from your own entries"></div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container feature-inner reverse">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">Ask</p>
+      <h2>Ask your past self <em>anything.</em></h2>
+      <p>Why am I so tired some days? What actually helps? Ask Lumen and it answers from your notes, with the days that back it up.</p>
+    </div>
+    <div class="feature-media reveal">
+      <div class="phone"><img src="img/05-chat.png" alt="Chatting with Lumen — a question answered from past entries, with the days it cites"></div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container feature-inner">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">Profile</p>
+      <h2>Meet the person <em>your days describe.</em></h2>
+      <p>After a few weeks, Kron builds a profile from your own words — what drains you, what lifts you, what you keep coming back to.</p>
+    </div>
+    <div class="feature-media reveal">
+      <div class="phone"><img src="img/06-profile.png" alt="Kron's profile — traits and tendencies drawn from the last several weeks"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy -->
+<section class="privacy" id="privacy">
+  <div class="container privacy-inner">
+    <div class="privacy-copy reveal">
+      <p class="eyebrow">Privacy</p>
+      <h2>Your words <em>stay yours.</em></h2>
+      <p class="lede">No account. No ads. No tracking. Your entries live in a database on your phone. Private entries never leave it, and Lumen only reads what you choose to send — to a provider you pick with your own key.</p>
+      <div class="assurances">
+        <div class="assurance">No account, no sign-up.</div>
+        <div class="assurance">No ads, no analytics, no tracking.</div>
+        <div class="assurance">Entries stored on your phone, not ours.</div>
+        <div class="assurance">Private entries never leave your device.</div>
+      </div>
+      <a class="privacy-link" href="privacy/">Read the privacy policy →</a>
+    </div>
+    <div class="privacy-media reveal">
+      <div class="phone"><img src="img/07-privacy.png" alt="Kron's privacy settings — what leaves your phone, clearly explained"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Get a key -->
+<section class="key-band" id="key">
+  <div class="container">
+    <div class="key-card reveal">
+      <p class="eyebrow" style="justify-content:center">Lumen</p>
+      <h2>Bring your own key. <em>Keep your own data.</em></h2>
+      <p>Lumen runs on an AI provider you choose — Anthropic, OpenAI, or another. You pay that provider directly, only for what Lumen uses, and your key stays in your phone's secure storage.</p>
+      <a class="btn btn-primary" href="key/">Get an AI key</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="wordmark" href="#top">Kron</a>
+      <span class="footer-tag">Made by Damian Labs</span>
+    </div>
+    <nav class="footer-links">
+      <a href="privacy/">Privacy policy</a>
+      <a href="key/">Get a key</a>
+      <a data-kron-email href="#">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    els.forEach((el) => io.observe(el));
+  } else {
+    els.forEach((el) => el.classList.add('in'));
+  }
+</script>
+<script>
+(function(){
+  var b = document.getElementById('themeToggle');
+  if (!b) return;
+  b.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', cur);
+    try { localStorage.setItem('kron-theme', cur); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

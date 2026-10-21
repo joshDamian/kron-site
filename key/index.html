@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get an AI key for Kron</title>
+<meta name="description" content="How to get an AI key for Lumen — from Anthropic or OpenAI — and keep the cost in check.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script>(function(){try{if(localStorage.getItem('kron-theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+<script src="../config.js"></script>
+</head>
+<body id="top">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="wordmark" href="../">Kron</a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="../privacy/">Privacy</a>
+        <a href="../">Back to Kron</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="article">
+  <div class="container">
+    <article class="article-card wide">
+      <a class="back" href="../"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to Kron</a>
+      <h1>Get an AI key for Lumen</h1>
+      <p class="muted">A couple of minutes, and Lumen is ready.</p>
+
+      <p>Lumen runs on an AI provider you pick. You pay that provider directly, only for what Lumen uses, and your key stays in your phone's secure storage.</p>
+
+      <div class="wizard">
+        <p class="wizard-label">Which provider do you use?</p>
+
+        <div class="provider-picker">
+          <button class="provider-card is-selected" data-provider="anthropic" type="button">
+            <span class="badge">Recommended</span>
+            <span class="provider-name"><span class="provider-dot"></span>Anthropic</span>
+            <span class="provider-sub">Kron's default. Clear, gentle answers.</span>
+          </button>
+          <button class="provider-card" data-provider="openai" type="button">
+            <span class="provider-name"><span class="provider-dot"></span>OpenAI</span>
+            <span class="provider-sub">Works too — or any OpenAI-compatible service.</span>
+          </button>
+        </div>
+
+        <div id="wizardSteps">
+          <div class="provider-panel is-active" id="panel-anthropic">
+            <div class="wizard-step is-active">
+              <p class="wizard-step-eyebrow">Step 1</p>
+              <h3>Make an account</h3>
+              <p>Sign up at the Anthropic console, then add a little credit under Billing.</p>
+              <a class="btn btn-secondary btn-sm" href="https://platform.claude.com" target="_blank" rel="noopener">Open platform.claude.com <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg></a>
+            </div>
+            <div class="wizard-step">
+              <p class="wizard-step-eyebrow">Step 2</p>
+              <h3>Create your key</h3>
+              <p>Go to API keys → Create key, then copy it. You'll paste it into Kron in the last step.</p>
+              <a class="btn btn-secondary btn-sm" href="https://platform.claude.com/settings/keys" target="_blank" rel="noopener">Open your API keys <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg></a>
+            </div>
+            <div class="wizard-step">
+              <p class="wizard-step-eyebrow">Step 3</p>
+              <h3>Paste it into Kron</h3>
+              <p>In Kron: Settings → Lumen → Anthropic → paste the key. That's it — Lumen's ready.</p>
+            </div>
+          </div>
+
+          <div class="provider-panel" id="panel-openai">
+            <div class="wizard-step">
+              <p class="wizard-step-eyebrow">Step 1</p>
+              <h3>Make an account</h3>
+              <p>Sign up at the OpenAI platform, then add credit under Billing.</p>
+              <a class="btn btn-secondary btn-sm" href="https://platform.openai.com" target="_blank" rel="noopener">Open platform.openai.com <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg></a>
+            </div>
+            <div class="wizard-step">
+              <p class="wizard-step-eyebrow">Step 2</p>
+              <h3>Create your key</h3>
+              <p>Go to API keys → Create new secret key, then copy it.</p>
+              <a class="btn btn-secondary btn-sm" href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">Open your API keys <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg></a>
+            </div>
+            <div class="wizard-step">
+              <p class="wizard-step-eyebrow">Step 3</p>
+              <h3>Paste it into Kron</h3>
+              <p>In Kron: Settings → Lumen → OpenAI → paste the key. That's it — Lumen's ready.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wizard-nav" id="wizardNav">
+          <button class="btn btn-secondary btn-sm wizard-nav-btn" id="wizardPrev" type="button">Back</button>
+          <div class="wizard-dots"><span class="wizard-dot is-active"></span><span class="wizard-dot"></span><span class="wizard-dot"></span></div>
+          <button class="btn btn-primary btn-sm wizard-nav-btn" id="wizardNext" type="button">Next</button>
+        </div>
+
+        <div class="wizard-done" id="wizardDone" hidden>
+          <svg class="done-icon" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <h3>Lumen's ready.</h3>
+          <p>Go log your first day. Close it tonight, and Lumen will read it back to you.</p>
+          <a class="btn btn-secondary btn-sm" href="../">Back to Kron</a>
+        </div>
+      </div>
+
+      <h2>Keep the cost in check</h2>
+      <p>Set a monthly spend limit in your provider's billing settings. Closing a day is a small call. Chat and dashboards over long stretches cost more. In Settings → Lumen → Thinking, "Low" keeps costs down with OpenAI-compatible providers.</p>
+    </article>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="wordmark" href="../">Kron</a>
+      <span class="footer-tag">Made by Damian Labs</span>
+    </div>
+    <nav class="footer-links">
+      <a href="../">Home</a>
+      <a href="../privacy/">Privacy policy</a>
+      <a data-kron-email href="#">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b = document.getElementById('themeToggle');
+  if (!b) return;
+  b.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', cur);
+    try { localStorage.setItem('kron-theme', cur); } catch (e) {}
+  });
+})();
+</script>
+<script>
+(function(){
+  var provider = 'anthropic';
+  var step = 0;
+  var total = 3;
+  var done = false;
+
+  var cards = document.querySelectorAll('.provider-card');
+  var panels = {
+    anthropic: document.getElementById('panel-anthropic'),
+    openai: document.getElementById('panel-openai')
+  };
+  var dots = document.querySelectorAll('.wizard-dot');
+  var prevBtn = document.getElementById('wizardPrev');
+  var nextBtn = document.getElementById('wizardNext');
+  var nav = document.getElementById('wizardNav');
+  var stepsArea = document.getElementById('wizardSteps');
+  var doneBox = document.getElementById('wizardDone');
+
+  function render() {
+    cards.forEach(function(c){ c.classList.toggle('is-selected', c.getAttribute('data-provider') === provider); });
+    Object.keys(panels).forEach(function(k){ panels[k].classList.toggle('is-active', k === provider); });
+    var steps = panels[provider].querySelectorAll('.wizard-step');
+    steps.forEach(function(s, i){ s.classList.toggle('is-active', !done && i === step); });
+    dots.forEach(function(d, i){ d.classList.toggle('is-active', !done && i === step); });
+    if (prevBtn) prevBtn.disabled = done || step === 0;
+    if (nextBtn) nextBtn.textContent = (step === total - 1) ? 'Finish' : 'Next';
+    if (nav) nav.hidden = done;
+    if (stepsArea) stepsArea.hidden = done;
+    if (doneBox) doneBox.hidden = !done;
+  }
+
+  cards.forEach(function(c){
+    c.addEventListener('click', function(){
+      provider = c.getAttribute('data-provider');
+      step = 0; done = false;
+      render();
+    });
+  });
+
+  if (prevBtn) prevBtn.addEventListener('click', function(){ if (!done && step > 0) { step--; render(); } });
+  if (nextBtn) nextBtn.addEventListener('click', function(){
+    if (done) return;
+    if (step < total - 1) { step++; } else { done = true; }
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
